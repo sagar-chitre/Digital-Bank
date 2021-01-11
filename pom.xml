@@ -39,7 +39,7 @@
         <tags></tags>
         <parallel.tests>1</parallel.tests>
         <webdriver.driver>firefox</webdriver.driver>
-        <webdriver.base.url>http://localhost:9092/bank/</webdriver.base.url>
+        <webdriver.base.url>http:/51.143.248.220:8080/bank/</webdriver.base.url>
         <buildNumber>local</buildNumber>
         <revision>2.1.0.${buildNumber}</revision>
         <contextPathName>bank</contextPathName>
