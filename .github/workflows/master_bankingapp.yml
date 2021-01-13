@@ -21,7 +21,7 @@ jobs:
         java-version: '11'
 
     - name: Build with Maven
-      run: mvn clean install
+      run: mvn clean package
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
@@ -29,4 +29,4 @@ jobs:
         app-name: 'bankingapp'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_6b5bb5281b5c4292b9e8481393601acb }}
-        package: '${{ github.workspace }}/target/*.war'
+        package: '${{ github.workspace }}/target/digitalbank-2.1.0.local.war'
