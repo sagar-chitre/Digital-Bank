@@ -29,4 +29,4 @@ jobs:
         app-name: 'bankingapp'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_633060a1004c4916bfb793196ef76b86 }}
-        package: '${{ github.workspace }}/target/*.war'
+        package: '${{ github.workspace }}/target/digitalbank-2.1.0.local.war'
